@@ -1,7 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { Bot, CheckCircle, MessageCircle } from 'lucide-react'
+import { MessageCircle } from 'lucide-react'
 import { useEffect, useState } from 'react'
 
 // Componente de Botão Neon
@@ -120,92 +120,27 @@ export default function GraciasPage() {
     visible: { opacity: 1, y: 0, transition: { duration: 0.6 } }
   }
 
-  const scaleIn = {
-    hidden: { opacity: 0, scale: 0.8 },
-    visible: { opacity: 1, scale: 1, transition: { duration: 0.5 } }
-  }
-
   return (
     <main className="relative min-h-screen bg-dark-bg flex items-center justify-center px-4 py-20">
       {mounted && <MatrixBackground />}
       
       <div className="max-w-4xl mx-auto text-center relative z-10">
-        {/* Ícone de Sucesso */}
-        <motion.div
-          initial="hidden"
-          animate="visible"
-          variants={scaleIn}
-          className="mb-8"
-        >
-          <div className="inline-flex items-center justify-center w-24 h-24 rounded-full bg-neon-green/20 border-4 border-neon-green mb-6">
-            <CheckCircle className="w-16 h-16 text-neon-green" />
-          </div>
-        </motion.div>
-
         {/* Título Principal */}
         <motion.h1
           initial="hidden"
           animate="visible"
           variants={fadeInUp}
-          className="text-4xl md:text-6xl font-orbitron font-bold mb-6 leading-tight"
+          className="text-4xl md:text-6xl font-orbitron font-bold mb-12 leading-tight"
         >
-          <span className="text-neon-green neon-glow">¡Gracias por tu Compra!</span>
+          <span className="text-neon-green neon-glow">¡Gracias!</span>
         </motion.h1>
-
-        {/* Mensagem de Agradecimiento */}
-        <motion.div
-          initial="hidden"
-          animate="visible"
-          variants={fadeInUp}
-          transition={{ delay: 0.2 }}
-          className="mb-12"
-        >
-          <GlassCard glow={true} className="max-w-2xl mx-auto">
-            <p className="text-xl md:text-2xl text-gray-300 mb-4">
-              Tu acceso a <span className="text-neon-green font-bold">La Era de los Agentes Autónomos</span> está listo.
-            </p>
-            <p className="text-lg text-gray-400">
-              Has dado el primer paso para convertirte en un <span className="text-neon-green">Arquitecto de Inteligencia</span>. 
-              Ahora tienes todo lo necesario para crear agentes de IA que trabajen para ti.
-            </p>
-          </GlassCard>
-        </motion.div>
-
-        {/* Información Adicional */}
-        <motion.div
-          initial="hidden"
-          animate="visible"
-          variants={fadeInUp}
-          transition={{ delay: 0.4 }}
-          className="mb-12"
-        >
-          <GlassCard className="max-w-xl mx-auto text-left">
-            <h2 className="text-2xl font-space font-bold mb-4 text-neon-green">
-              ¿Qué sigue ahora?
-            </h2>
-            <ul className="space-y-3 text-gray-300">
-              <li className="flex items-start gap-3">
-                <CheckCircle className="w-6 h-6 text-neon-green flex-shrink-0 mt-1" />
-                <span>Revisa tu correo para acceder al contenido completo</span>
-              </li>
-              <li className="flex items-start gap-3">
-                <CheckCircle className="w-6 h-6 text-neon-green flex-shrink-0 mt-1" />
-                <span>Sigue el tutorial paso a paso para crear tu primer agente</span>
-              </li>
-              <li className="flex items-start gap-3">
-                <CheckCircle className="w-6 h-6 text-neon-green flex-shrink-0 mt-1" />
-                <span>Aplica el Framework R.C.T.F. en tus proyectos</span>
-              </li>
-            </ul>
-          </GlassCard>
-        </motion.div>
 
         {/* Botón de WhatsApp */}
         <motion.div
           initial="hidden"
           animate="visible"
           variants={fadeInUp}
-          transition={{ delay: 0.6 }}
+          transition={{ delay: 0.2 }}
         >
           <NeonButton 
             href="https://w.app/8qbvld"
@@ -215,17 +150,6 @@ export default function GraciasPage() {
             Pedir Acceso Extra
           </NeonButton>
         </motion.div>
-
-        {/* Mensaje Final */}
-        <motion.p
-          initial="hidden"
-          animate="visible"
-          variants={fadeInUp}
-          transition={{ delay: 0.8 }}
-          className="mt-12 text-gray-500 text-lg"
-        >
-          ¡Bienvenido a la revolución de la IA! <Bot className="inline-block w-5 h-5 text-neon-green" />
-        </motion.p>
       </div>
     </main>
   )
