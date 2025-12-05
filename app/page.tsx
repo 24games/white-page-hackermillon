@@ -122,8 +122,8 @@ export default function Home() {
             variants={fadeInUp}
             className="text-5xl md:text-7xl font-orbitron font-bold mb-6 leading-tight"
           >
-            A Revolução Silenciosa: Bem-vindo à{' '}
-            <span className="text-neon-green neon-glow">Era dos Agentes Autônomos</span>.
+            La Revolución Silenciosa: Bienvenido a la{' '}
+            <span className="text-neon-green neon-glow">Era de los Agentes Autónomos</span>.
           </motion.h1>
           
           <motion.p
@@ -133,8 +133,8 @@ export default function Home() {
             transition={{ delay: 0.2 }}
             className="text-xl md:text-2xl text-gray-300 mb-10 max-w-3xl mx-auto"
           >
-            O guia definitivo para clonar sua produtividade configurando Inteligência Artificial do absoluto zero. 
-            Pare de conversar com a IA. Comece a programá-la.
+            La guía definitiva para clonar tu productividad configurando Inteligencia Artificial desde cero absoluto. 
+            Deja de conversar con la IA. Comienza a programarla.
           </motion.p>
 
           <motion.div
@@ -144,7 +144,7 @@ export default function Home() {
             transition={{ delay: 0.4 }}
           >
             <NeonButton>
-              QUERO CRIAR MEU PRIMEIRO AGENTE <Bot className="inline-block w-5 h-5" />
+              QUIERO CREAR MI PRIMER AGENTE <Bot className="inline-block w-5 h-5" />
             </NeonButton>
           </motion.div>
         </div>
@@ -163,18 +163,18 @@ export default function Home() {
             {/* Card Passado */}
             <GlassCard className="opacity-70">
               <div className="text-6xl mb-4">🥱</div>
-              <h3 className="text-2xl font-space font-bold mb-4 text-gray-400">O Chatbot Padrão</h3>
+              <h3 className="text-2xl font-space font-bold mb-4 text-gray-400">El Chatbot Estándar</h3>
               <p className="text-gray-400 text-lg">
-                Você microgerencia cada passo. É como um estagiário no primeiro dia.
+                Microgestionas cada paso. Es como un practicante en su primer día.
               </p>
             </GlassCard>
 
             {/* Card Futuro */}
             <GlassCard glow={true}>
               <div className="text-6xl mb-4">🚀</div>
-              <h3 className="text-2xl font-space font-bold mb-4 text-neon-green">O Agente de IA</h3>
+              <h3 className="text-2xl font-space font-bold mb-4 text-neon-green">El Agente de IA</h3>
               <p className="text-gray-300 text-lg">
-                Um funcionário sênior. Conhece o contexto, entende o tom de voz e entrega o resultado pronto.
+                Un empleado senior. Conoce el contexto, entiende el tono de voz y entrega el resultado listo.
               </p>
             </GlassCard>
           </motion.div>
@@ -191,7 +191,7 @@ export default function Home() {
             variants={fadeInUp}
             className="text-4xl md:text-5xl font-orbitron font-bold text-center mb-16"
           >
-            A Arquitetura de um <span className="text-neon-green">Agente Funcional</span>
+            La Arquitectura de un <span className="text-neon-green">Agente Funcional</span>
           </motion.h2>
 
           <div className="grid md:grid-cols-3 gap-8">
@@ -204,10 +204,10 @@ export default function Home() {
             >
               <GlassCard className="text-center h-full">
                 <Brain className="w-16 h-16 mx-auto mb-4 text-neon-green" />
-                <h3 className="text-2xl font-space font-bold mb-4">A Persona</h3>
+                <h3 className="text-2xl font-space font-bold mb-4">La Persona</h3>
                 <p className="text-gray-300">
-                  <span className="text-neon-green font-semibold">Quem ele é?</span> Chega de respostas genéricas. 
-                  Aprenda a ativar partes específicas da rede neural para criar especialistas.
+                  <span className="text-neon-green font-semibold">¿Quién es?</span> Basta de respuestas genéricas. 
+                  Aprende a activar partes específicas de la red neuronal para crear especialistas.
                 </p>
               </GlassCard>
             </motion.div>
@@ -222,10 +222,10 @@ export default function Home() {
             >
               <GlassCard className="text-center h-full">
                 <Database className="w-16 h-16 mx-auto mb-4 text-neon-green" />
-                <h3 className="text-2xl font-space font-bold mb-4">A Base de Conhecimento</h3>
+                <h3 className="text-2xl font-space font-bold mb-4">La Base de Conocimiento</h3>
                 <p className="text-gray-300">
-                  <span className="text-neon-green font-semibold">O que ele sabe?</span> Insira o cérebro da sua empresa 
-                  (Manuais, Tabelas, Histórico) dentro da IA.
+                  <span className="text-neon-green font-semibold">¿Qué sabe?</span> Inserta el cerebro de tu empresa 
+                  (Manuales, Tablas, Historial) dentro de la IA.
                 </p>
               </GlassCard>
             </motion.div>
@@ -240,10 +240,10 @@ export default function Home() {
             >
               <GlassCard className="text-center h-full">
                 <Zap className="w-16 h-16 mx-auto mb-4 text-neon-green" />
-                <h3 className="text-2xl font-space font-bold mb-4">As Ações</h3>
+                <h3 className="text-2xl font-space font-bold mb-4">Las Acciones</h3>
                 <p className="text-gray-300">
-                  <span className="text-neon-green font-semibold">O que ele faz?</span> Transforme dados em tarefas. 
-                  De e-mail para Trello, de planilha para relatório.
+                  <span className="text-neon-green font-semibold">¿Qué hace?</span> Transforma datos en tareas. 
+                  De correo a Trello, de planilla a informe.
                 </p>
               </GlassCard>
             </motion.div>
@@ -263,19 +263,19 @@ export default function Home() {
           >
             <Code className="w-20 h-20 mx-auto mb-6 text-neon-green" />
             <h2 className="text-4xl md:text-5xl font-orbitron font-bold mb-4">
-              O Segredo: A <span className="text-neon-green neon-glow">Engenharia do Prompt</span>
+              El Secreto: La <span className="text-neon-green neon-glow">Ingeniería del Prompt</span>
             </h2>
             <p className="text-2xl font-space text-neon-green mb-8">Framework R.C.T.F.</p>
             <p className="text-gray-300 text-lg max-w-2xl mx-auto">
-              O método validado para eliminar alucinações da IA.
+              El método validado para eliminar alucinaciones de la IA.
             </p>
           </motion.div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
-              { letter: 'R', word: 'Role', desc: 'Papel' },
+              { letter: 'R', word: 'Role', desc: 'Rol' },
               { letter: 'C', word: 'Context', desc: 'Contexto' },
-              { letter: 'T', word: 'Task', desc: 'Tarefa' },
+              { letter: 'T', word: 'Task', desc: 'Tarea' },
               { letter: 'F', word: 'Format', desc: 'Formato' },
             ].map((item, index) => (
               <motion.div
@@ -307,7 +307,7 @@ export default function Home() {
             variants={fadeInUp}
             className="text-4xl md:text-5xl font-orbitron font-bold text-center mb-16"
           >
-            Técnicas <span className="text-neon-green">Avançadas</span>
+            Técnicas <span className="text-neon-green">Avanzadas</span>
           </motion.h2>
 
           <div className="grid md:grid-cols-2 gap-8">
@@ -322,10 +322,10 @@ export default function Home() {
                   Few-Shot Prompting
                 </h3>
                 <p className="text-gray-300 text-lg mb-4">
-                  O Poder dos Exemplos
+                  El Poder de los Ejemplos
                 </p>
                 <p className="text-gray-400">
-                  Mostre à IA exemplos concretos do que você quer. Ela aprende o padrão e replica com precisão.
+                  Muestra a la IA ejemplos concretos de lo que quieres. Aprende el patrón y replica con precisión.
                 </p>
               </GlassCard>
             </motion.div>
@@ -341,10 +341,10 @@ export default function Home() {
                   Chain of Thought
                 </h3>
                 <p className="text-gray-300 text-lg mb-4">
-                  Ensinando a IA a "pensar" antes de responder
+                  Enseñando a la IA a "pensar" antes de responder
                 </p>
                 <p className="text-gray-400">
-                  Force a IA a mostrar seu raciocínio passo a passo. Resultados mais precisos e confiáveis.
+                  Fuerza a la IA a mostrar su razonamiento paso a paso. Resultados más precisos y confiables.
                 </p>
               </GlassCard>
             </motion.div>
@@ -362,18 +362,18 @@ export default function Home() {
             variants={fadeInUp}
           >
             <h2 className="text-4xl md:text-5xl font-orbitron font-bold mb-8">
-              Deixe de ser um <span className="text-gray-400">Operador</span>.
+              Deja de ser un <span className="text-gray-400">Operador</span>.
               <br />
-              Torne-se um <span className="text-neon-green neon-glow">Arquiteto de Inteligência</span>.
+              Conviértete en un <span className="text-neon-green neon-glow">Arquitecto de Inteligencia</span>.
             </h2>
 
             <div className="glass rounded-xl p-8 mb-10 text-left max-w-2xl mx-auto">
-              <h3 className="text-2xl font-space font-bold mb-6 text-neon-green">O que você vai receber:</h3>
+              <h3 className="text-2xl font-space font-bold mb-6 text-neon-green">Lo que vas a recibir:</h3>
               <ul className="space-y-4">
                 {[
-                  'Acesso ao Prompt Mestre',
-                  'Tutorial Passo a Passo (GPTs & Claude)',
-                  'Guia de Limpeza de Dados (RAG)',
+                  'Acceso al Prompt Maestro',
+                  'Tutorial Paso a Paso (GPTs & Claude)',
+                  'Guía de Limpieza de Datos (RAG)',
                 ].map((item, index) => (
                   <motion.li
                     key={index}
@@ -399,7 +399,7 @@ export default function Home() {
               transition={{ delay: 0.3 }}
             >
               <NeonButton className="text-xl px-12 py-6">
-                ACESSAR O GUIA AGORA <Bot className="inline-block w-6 h-6" />
+                ACCEDER AL GUÍA AHORA <Bot className="inline-block w-6 h-6" />
               </NeonButton>
             </motion.div>
           </motion.div>
@@ -408,7 +408,7 @@ export default function Home() {
 
       {/* Footer */}
       <footer className="relative py-8 px-4 text-center text-gray-500 z-10">
-        <p>© 2024. Todos os direitos reservados.</p>
+        <p>© 2024. Todos los derechos reservados.</p>
       </footer>
     </main>
   )

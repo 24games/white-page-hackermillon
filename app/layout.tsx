@@ -2,8 +2,8 @@ import type { Metadata } from 'next'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'A Era dos Agentes Autônomos - Revolução da IA',
-  description: 'O guia definitivo para clonar sua produtividade configurando Inteligência Artificial do absoluto zero.',
+  title: 'La Era de los Agentes Autónomos - Revolución de la IA',
+  description: 'La guía definitiva para clonar tu productividad configurando Inteligencia Artificial desde cero absoluto.',
 }
 
 export default function RootLayout({
@@ -12,7 +12,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="pt-BR">
+    <html lang="es-CL">
       <body>{children}</body>
     </html>
   )
