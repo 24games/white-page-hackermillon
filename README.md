@@ -58,3 +58,27 @@ npm run build
 npm start
 ```
 
+## 📤 Push para GitHub
+
+Para fazer push das alterações para o repositório GitHub:
+
+### Método 1: Script Automatizado (Windows)
+```bash
+push-to-github.bat
+```
+
+### Método 2: Script Automatizado (Linux/Mac)
+```bash
+chmod +x push-to-github.sh
+./push-to-github.sh
+```
+
+### Método 3: Manual
+```bash
+git add .
+git commit -m "Sua mensagem de commit"
+git push origin main --verbose
+```
+
+**Repositório:** https://github.com/24games/white-page-hackermillon
+
