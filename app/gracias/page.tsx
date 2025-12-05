@@ -1,7 +1,6 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { MessageCircle } from 'lucide-react'
 import { useEffect, useState } from 'react'
 
 // Componente de Botão Neon
@@ -146,8 +145,7 @@ export default function GraciasPage() {
             href="https://w.app/8qbvld"
             className="text-xl px-12 py-6"
           >
-            <MessageCircle className="inline-block w-6 h-6" />
-            Pedir Acceso Extra
+            Haz Clic Aquí
           </NeonButton>
         </motion.div>
       </div>
