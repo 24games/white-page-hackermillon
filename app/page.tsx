@@ -5,7 +5,28 @@ import { Bot, Brain, Database, Zap, Code, CheckCircle } from 'lucide-react'
 import { useEffect, useState } from 'react'
 
 // Componente de Botão Neon
-const NeonButton = ({ children, onClick, className = '' }: { children: React.ReactNode, onClick?: () => void, className?: string }) => {
+const NeonButton = ({ children, onClick, className = '', href }: { children: React.ReactNode, onClick?: () => void, className?: string, href?: string }) => {
+  if (href) {
+    return (
+      <motion.a
+        href={href}
+        target="_blank"
+        rel="noopener noreferrer"
+        whileHover={{ scale: 1.05, boxShadow: '0 0 30px rgba(0, 255, 65, 0.8)' }}
+        whileTap={{ scale: 0.95 }}
+        className={`relative inline-block px-8 py-4 bg-neon-green text-black font-bold text-lg rounded-lg overflow-hidden group ${className}`}
+      >
+        <span className="relative z-10 flex items-center gap-2">
+          {children}
+        </span>
+        <motion.div
+          className="absolute inset-0 bg-gradient-to-r from-neon-green to-neon-green-alt opacity-0 group-hover:opacity-100 transition-opacity"
+          initial={false}
+        />
+      </motion.a>
+    )
+  }
+
   return (
     <motion.button
       onClick={onClick}
@@ -143,7 +164,7 @@ export default function Home() {
             variants={fadeInUp}
             transition={{ delay: 0.4 }}
           >
-            <NeonButton>
+            <NeonButton href="https://go.centerpag.com/PPU38CQ4BNQ">
               QUIERO CREAR MI PRIMER AGENTE <Bot className="inline-block w-5 h-5" />
             </NeonButton>
           </motion.div>
@@ -398,7 +419,7 @@ export default function Home() {
               variants={fadeInUp}
               transition={{ delay: 0.3 }}
             >
-              <NeonButton className="text-xl px-12 py-6">
+              <NeonButton href="https://go.centerpag.com/PPU38CQ4BNQ" className="text-xl px-12 py-6">
                 ACCEDER AL GUÍA AHORA <Bot className="inline-block w-6 h-6" />
               </NeonButton>
             </motion.div>
