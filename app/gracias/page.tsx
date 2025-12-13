@@ -142,7 +142,7 @@ export default function GraciasPage() {
           transition={{ delay: 0.2 }}
         >
           <NeonButton 
-            href="https://w.app/8qbvld"
+            href="https://w.app/apphm"
             className="text-xl px-12 py-6"
           >
             Haz Clic Aquí
