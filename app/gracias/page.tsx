@@ -134,6 +134,17 @@ export default function GraciasPage() {
           <span className="text-neon-green neon-glow">¡Gracias!</span>
         </motion.h1>
 
+        {/* Texto de instrucción */}
+        <motion.p
+          initial="hidden"
+          animate="visible"
+          variants={fadeInUp}
+          transition={{ delay: 0.1 }}
+          className="text-xl md:text-2xl text-gray-300 mb-8 max-w-2xl mx-auto"
+        >
+          ¡Felicitaciones por asegurar tu acceso! Haz clic en el botón de abajo para recibir ahora mismo
+        </motion.p>
+
         {/* Botón de WhatsApp */}
         <motion.div
           initial="hidden"
@@ -142,7 +153,7 @@ export default function GraciasPage() {
           transition={{ delay: 0.2 }}
         >
           <NeonButton 
-            href="https://w.app/apphm"
+            href="https://wa.me/56927109730?text=Quiero%20conceder%20acceso%20a%20la%20aplicación!"
             className="text-xl px-12 py-6"
           >
             Haz Clic Aquí
