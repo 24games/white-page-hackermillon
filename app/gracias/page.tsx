@@ -153,7 +153,7 @@ export default function GraciasPage() {
           transition={{ delay: 0.2 }}
         >
           <NeonButton 
-            href="https://wa.me/5547999866781?text=%C2%A1Realic%C3%A9%20el%20pago%20por%20flow!"
+            href="https://wa.me/11958065533?text=%C2%A1Realic%C3%A9%20el%20pago%20por%20flow!"
             className="text-xl px-12 py-6"
           >
             Haz Clic Aquí
